@@ -21,12 +21,13 @@ def main():
         
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_img_o, [1600-x, 0])
+        screen.blit(bg_img, [3200-x, 0])
         screen.blit(kk_img_lst[tmr%100//50], [300, 200])
         pg.display.update()
         tmr += 1 
         x += 1       
         clock.tick(100)
-        if x >= 1599:
+        if x >= 3199:
             x = 0
 
 
